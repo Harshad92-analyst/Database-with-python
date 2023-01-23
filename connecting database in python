@@ -1,0 +1,19 @@
+
+
+server = ibm_db.server_info(conn)
+
+print ("DBMS_NAME: ", server.DBMS_NAME)
+print ("DBMS_VER:  ", server.DBMS_VER)
+print ("DB_NAME:   ", server.DB_NAME)
+
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+/tmp/ipykernel_69/4159812593.py in <module>
+      1 #Retrieve Metadata for the Database Server
+----> 2 server = ibm_db.server_info(conn)
+      3 
+      4 print ("DBMS_NAME: ", server.DBMS_NAME)
+      5 print ("DBMS_VER:  ", server.DBMS_VER)
+
+NameError: name 'conn' is not defined
